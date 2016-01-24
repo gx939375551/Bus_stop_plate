@@ -1,0 +1,209 @@
+//模块框架宽度
+@layoutwidth: 1280px;
+//绿色
+@green: #2fac57;
+//白色
+@white: #ffffff;
+//相对布局
+@relative: relative;
+//左浮动
+@left: left;
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-width:1368px;
+}
+.header {
+    width: @layoutwidth;
+}
+
+
+/*31路*/
+
+.header_num {
+    .header_num-layout {
+        width: 300px;
+        height: 150px;
+        background-color: #fd3434;
+        margin-top: 50px;
+        float: @left;
+        .header_num-p {
+            font-size: 110px;
+            font-weight: bold;
+            line-height: 160px;
+            text-align: center;
+            color: @white;
+        }
+    }
+}
+
+
+/*朝阳公园和北京华侨城公共布局和样式*/
+
+.header_title {
+    .header_title-layout {
+        float: @left;
+        margin-top: 50px;
+        margin-left: 100px;
+        .header_title-p {
+            font-size: 70px;
+            color: @green;
+        }
+    }
+    .header_title-layout-2 {
+        margin-top: -40px;
+        margin-left: 130px;
+    }
+}
+
+
+/*符号"-"的布局和样式*/
+
+.header_line {
+    .header_line-layout {
+        float: @left;
+        margin-top: 80px;
+        margin-left: 20px;
+        .header_line-style {
+            width: 80px;
+            height: 10px;
+            background-color: @green;
+        }
+    }
+}
+
+
+/*拼音的布局位置和样式*/
+
+.header_take {
+    .header_take-layout {
+        float: @left;
+        margin-top: 140px;
+        margin-left: -300px;
+        .header_take-p {
+            font-size: 22px;
+            color: @green;
+        }
+    }
+    .header_take-layout-2 {
+        margin-top: 50px;
+        margin-left: -310px;
+    }
+}
+
+
+/*时间的布局和样式*/
+
+.header_time {
+    .header_time-layout {
+        clear: both;
+        margin-left: 30px;
+        position: @relative;
+        top: 30px;
+        .header_time-style {
+            font-size: 31px;
+            color: #535252;
+        }
+    }
+}
+
+
+/*内容区域的容器*/
+
+.container {
+    width: 100%;
+    height: 310px;
+    background-color: @green;
+    margin-top: 50px;
+}
+
+
+/*内容区域的定宽*/
+
+.container_content {
+    width: @layoutwidth;
+    margin: 0 auto;
+}
+
+
+/*站点的布局*/
+
+.content_p-layout {
+    position: @relative;
+    top: 20px;
+    float: @left;
+    margin-right: 5px;
+}
+
+
+/*站点的样式*/
+
+.content_p-style {
+    font-size: 38px;
+    color: @white;
+}
+
+
+/*底部框架*/
+
+.footer {
+    width: @layoutwidth;
+    margin: 0 auto;
+}
+
+
+/*底部信息布局和样式*/
+
+.footer_info {
+    .footer_info-layout {
+        position: @relative;
+        top: -60px;
+        left: 350px;
+        .footer_info-style {
+            h5 {
+                font-size: 25px;
+                color: #535252;
+                margin-right: 20px;
+                float: left;
+            }
+        }
+    }
+}
+
+
+/*箭头布局和样式*/
+
+.footer_arrow {
+    .footer_arrow-layout {
+        transform: rotateY(180deg);
+        position: absolute;
+        top: 661px;
+        left: 1295px;
+        .footer_arrow-style {
+            width: 0;
+            height: 0;
+            border-left: 0;
+            border-bottom: 0;
+            border-top: 50px solid #fd3434;
+            border-top-color: transparent;
+            border-right: 70px solid #fd3434;
+        }
+    }
+}
+
+
+/*箭头线布局和样式*/
+
+.footer_line {
+    .footer_line-layout {
+        margin-top: 100px;
+        .footer_line-style {
+            width: 1258px;
+            height: 20px;
+            background-color: #fd3434;
+        }
+    }
+}
+
